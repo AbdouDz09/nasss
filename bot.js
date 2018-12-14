@@ -1,32 +1,23 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(`**
-      حياك الله ي بعد راسي
-       خش بتنورنا فعاليات وكل شيء حلو موجود !
-        ي بعد عيني الرابط تحت
-         Spring SERVER
-
-                                 [ https://discord.gg/Un29Wvs ] **`)
+  return channel.send(`:rose:  ولكم نورت السيرفر:rose: 
+انشاء الله تتفاعل
+لو دخل سيرفر راح تنور سيرفر
+https://discord.gg/Un29Wvs`) 
 }).catch(console.error)
 })
 
-client.on("guildMemberRemove", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**
-      حياك الله ي بعد راسي
-       خش بتنورنا فعاليات وكل شيء حلو موجود !
-        ي بعد عيني الرابط تحت
-         Spring SERVER
 
-                                 [ https://discord.gg/Un29Wvs ] **`)
+client.on("guildMemberMove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(`تلعت من سيرفر مو مشكلة  
+انشاء الله تتفاعل في سيرفر تحت
+لو دخل سيرفر راح تنور سيرفر
+https://discord.gg/Un29Wvs`) 
 }).catch(console.error)
-});
+}) 
 
 client.login('TOKEN');
