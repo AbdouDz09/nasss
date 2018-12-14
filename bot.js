@@ -13,7 +13,7 @@ client.on("guildMemberAdd", member => {
         ي بعد عيني الرابط تحت
          Spring SERVER
 
-                                 [ رابط سيرفرك ] **`)
+                                 [ https://discord.gg/Un29Wvs ] **`)
 }).catch(console.error)
 })
 
@@ -25,8 +25,8 @@ client.on("guildMemberRemove", member => {
         ي بعد عيني الرابط تحت
          Spring SERVER
 
-                                 [ رابط سيرفرك ] **`)
+                                 [ https://discord.gg/Un29Wvs ] **`)
 }).catch(console.error)
 }
 
-client.login('');
+client.login('process.env.BOT_TOKEN');
