@@ -27,6 +27,6 @@ client.on("guildMemberRemove", member => {
 
                                  [ https://discord.gg/Un29Wvs ] **`)
 }).catch(console.error)
-}
+});
 
 client.login('process.env.BOT_TOKEN');
